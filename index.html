@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="./fontawesome-free-5.15.4-web/css/all.css">
+    <link rel="stylesheet" href="./fontawesome-free-5.15.4-web/webfonts/fa-brands-400.eot">
+    <link rel="stylesheet" href="./main.js">
+    <title>HOTEL DE LA CREEK</title>
+    
+    <style>
+    .anime{
+       color: white;
+       
+        width: 200px;
+        height: 200px;
+        position: relative;
+        margin-left: 30px; margin-top: 20px; margin-bottom: 20px;
+        animation-name: animate1;
+        animation-duration: 5s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+        animation-fill-mode: forwards;
+        animation-delay: 2s;
+         animation-timing-function: ease-in-out;
+    }
+    
+    
+    @keyframes animate1{
+        from{
+            top: 0;
+        }
+        
+        to{
+            width: 1150px;
+            color: yellow;
+            top: 150px;
+        }
+    }
+    </style>
+</head>
+<body>
+        <header class="header">
+            <div class="container">
+                <nav class="nav">
+                    <a href="index.html" class="logo">
+                        <img src="./images/PicsArt_12-14-09.29.42.jpg" alt="logo" width="125px">
+                    </a>
+                    <div class="hamburger-menu">
+                        <i class="fas fa-bars"></i>
+                        <i class="fas fa-times"></i>
+                    </div>
+                    <ul class="navlist">
+                        <li class="navitem">
+                            <a href="index.html" class="navlink">Home</a>
+                        </li>
+                        <li class="navitem">
+                            <a href="./about.html" class="navlink">About</a>
+                        </li>
+                        <li class="navitem">
+                            <a href="./offers.html" class="navlink">Offers</a>
+                        </li>
+                        <li class="navitem">
+                            <a href="www.hotelupdates.com" class="navlink">News</a>
+                        </li>
+                        <li class="navitem">
+                            <a href="./contact.html" class="navlink">Contact</a>
+                        </li>
+                        <li class="navitem">
+                            <a href="./my portfolio/portfolio.html" class="navlink">Partnerships</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>    
+<main>
+    <div class="hero">
+        <div class="container">
+            <div class="mainheading">
+                <h1 class="title">Welcome to</h1>
+                <h2 class="subtitle">HOTEL DE LA CREEK</h2>
+            </div>
+            <a href="#" class="btn btn-gradient"> Explore Now
+                <span class="dots"><i class="fas fa-ellipsis-h"></i> </span>
+            </a>
+        </div>
+    </div>
+    <section class="booking">
+        <div class="container">
+            <form action="" class="form">
+                <div class="inputgroup">
+                    <label for="Destination" class="inputlabel">Room Types</label>
+                    <input type="text" class="input" id="destination" placeholder="Executive, Vvip, Vip, Standard">
+                </div>
+                <div class="inputgroup">
+                    <label for="Check-in" class="inputlabel">Check-In</label>
+                    <input type="date" class="input" id="Check-in">
+                </div>
+                <div class="inputgroup">
+                    <label for="Check-out" class="inputlabel">Check-Out</label>
+                    <input type="date" class="input" id="Check-out">
+                </div>
+                <div class="inputgroup">
+                    <label for="Adults" class="inputlabel">Adult</label>
+                    <select name="" id="adults" class="options">
+                        <option value="0">0</option>
+                        <option value="0">1</option>
+                        <option value="0">2</option>
+                        <option value="0">3</option>
+                        <option value="0">4</option>
+                        <option value="0">5</option>
+                    </select>
+                </div>
+
+                <div class="inputgroup">
+                    <label for="Children" class="inputlabel">Children</label>
+                    <select name="" id="Children" class="options">
+                        <option value="0">0</option>
+                        <option value="0">1</option>
+                        <option value="0">2</option>
+                        <option value="0">3</option>
+                        <option value="0">4</option>
+                        <option value="0">5</option>
+                    </select>
+                </div>
+                <button  type="submit" class="btn formbtn btnblue">Search
+                    <span class="dots"><i class="fas fa-ellipsis-h"></i> </span>
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <section id="explore1"  class="roomtypes">
+        <div class="container">
+            <h5 class="sectionhead">
+                <span class="heading" >Explore</span>
+                <span class="subhead"> Our Luxurious Rooms and Suites</span>
+            </h5>
+            <div class="grid">
+                <div class="griditems featuredrooms">
+                    <img src="./images/./adam-winger-VGs8z60yT2c-unsplash.jpg" alt="" class="room1image" width="500px">
+                    <h5 id="room1image">Standard</h5>
+                    <span class="roomprice"> from $180/Night</span>
+                    <div class="roomreading">
+                        <i class="fas fa-star rating"></i>
+                        <i class="fas fa-star rating"></i>
+                        <i class="fas fa-star rating"></i>
+                        <i class="fas fa-star rating"></i>
+                        <i class="fas fa-star-half rating"></i>
+                    </div>
+                    <a href="#" class="btn btnblue">Book Now
+                            <span class="dots"> <i class="fas fa ellipsis-h"></i> </span>
+                    </a>
+                </div>
+
+                <div class="griditems featuredrooms">
+                    <img src="./images/./edelle-bruton-PJNO2sLlbB8-unsplash.jpg" alt="" class="room2image" width="500px">
+                    <h5 id="room2image">VVIP</h5>
+                    <span class="room2price"> from $280/Night</span>
+                    <div class="room2reading">
+                        <i class="fas fa-star rating"></i>
+                        <i class="fas fa-star rating"></i>
+                        <i class="fas fa-star rating"></i>
+                        <i class="fas fa-star rating"></i>
+                        <i class="fas fa-star-half rating"></i>
+                    </div>
+                    <a href="#" class="btn btnblue">Book Now
+                            <span class="dots"> <i class="fas fa ellipsis-h"></i> </span>
+                    </a>
+                </div>
+
+
+
+                <div class="griditems featuredrooms">
+                    <img src="./images/reisetopia-aI6Su7Mu9Ro-unsplash.jpg" alt="" class="room3image" width="500px">
+                    <h5 id="room3image">Executives</h5>
+                    <span class="room3price"> from $350/Night</span>
+                    <div class="room3reading">
+                        <i class="fas fa-star rating"></i>
+                        <i class="fas fa-star rating"></i>
+                        <i class="fas fa-star rating"></i>
+                        <i class="fas fa-star rating"></i>
+                        <i class="fas fa-star rating"></i>
+                    </div>
+                    <a href="#" class="btn btnblue">Book Now
+                            <span class="dots"> <i class="fas fa ellipsis-h"></i> </span>
+                    </a>
+                </div>
+
+
+
+                <div class="griditems featuredrooms">
+                    <img src="./images/istockphoto-1318363878-170667a.jpg" alt="" class="room4image" width="500px">
+                    <h5 id="room4image">Executives</h5>
+                    <span class="room4price"> from $350/Night</span>
+                    <div class="room4reading">
+                        <i class="fas fa-star rating"></i>
+                        <i class="fas fa-star rating"></i>
+                        <i class="fas fa-star rating"></i>
+                        <i class="fas fa-star rating"></i>
+                        <i class="fas fa-star rating"></i>
+                    </div>
+                    <a href="#" class="btn btnblue">Book Now
+                            <span class="dots"> <i class="fas fa ellipsis-h"></i> </span>
+                    </a>
+                </div>
+                
+            </div>
+        </div>
+         <section class=" roomtypes">
+        <div class="container">
+            <h5 class="sectionhead">
+                <span class="heading">Gallery </span>
+                <span class="subhead"> At Hotel de la Creek, <br> We bring you Luxury whilst feeling at home</span>
+            </h5>
+            <div class="c22">
+                <div class="grid2">
+                    <div class="griditems featuredrooms">
+                   
+                   
+                   
+                    <img src="./images/./vojtech-bruzek-Yrxr3bsPdS0-unsplash.jpg" alt="" class="room22image" width="500px">
+                </div>
+                    <div class="griditems featuredrooms">
+                    <img src="./images/./rezha-ramadhan-sV8M_Lkg60Y-unsplash.jpg" alt="" class="room22image" width="500px">
+                </div>
+                    <div class="griditems featuredrooms">
+                    <img src="./images/./sara-dubler-Koei_7yYtIo-unsplash.jpg" alt="" class="room22image" width="500px">
+                </div>
+                <div class="griditems featuredrooms"> 
+                    <img src="./images/./ibrahim-boran-m8YjB0noWiY-unsplash.jpg" alt="" class="room22image" width="500px">
+                </div>
+                <div class="griditems featuredrooms"> 
+                    <img src="./images/./crew-szCvt1gP2d4-unsplash.jpg" alt="" class="room22image" width="500px">
+                </div>
+                    <div class="griditems featuredrooms"> 
+                    <img src="./images/./alevision-co-lw3Lqe2K7xc-unsplash.jpg" alt="" class="room22image" width="500px">
+                </div>
+
+                    
+                
+                    
+            </div>
+
+
+    </section>
+    <div class="aboutcreek">
+        <h1 class="abouth1">About Us</h1>
+        <h3 class="abouth3"> Hotel de la Creek, founded in december 2021 by Henry Ibekwe is a customer friendly, <br>
+             luxurious and affordable hotel also an e-commerce site <br>
+        where we bring in offers from different luxurious and affordable hotel's around the globe <br>
+        helps in quick and emmergency bookings from anywhere around the world, You dont have to lodge only with <br>
+        us to be comfortable as we partner with top notch hotels for our customer's satisfaction.
+        <br>
+        <br>
+        <h5 class="abouth5">We are dedicated to bringing you the best. <br>
+                                                     ~ Henry Ibekwe ~ <br>
+                                                     Founder/CEO Hotel de la Creek
+        </h5>
+        </h3>
+
+
+
+</div>
+
+    <section id="contact">
+        <h1 class="heading">Contact</h1>
+        <form action="" class="form33"></form>
+        <input type="text" name="name" class="input" placeholder="Enter Your Name">
+        <input type="email" name="email" class="input" placeholder="Enter Your Email">
+        <textarea name="Message" id="Message" cols="70" rows="10" placeholder="Enter Your Message"></textarea>
+        <input type="submit" value="SUBMIT" id="submit">
+    </section>
+    
+<div class="bigbox">
+    <div class="anime">
+        <h3 class="animeh3">Thanks for visiting Hotel de la Creek, 
+        We are dedicated to bringing you the best, Do have a nice Stay. </h3>
+    </div>
+    <div class="box2">
+        <a href="#" class="box2">
+            <img src="./images/PicsArt_12-14-09.29.42.jpg" alt="logo" width="100px">
+        </a>
+    </div>
+</div>
+
+
+
+
+
+</main>
+
+
+
+<footer class="foot">
+        <div class="footer">
+            <span class="footerspan">
+                    Designed with <i class="fas fa-heart"></i> by Henry Ibekwe
+            </span> <br>
+            <span  class="footerspan">
+                <i class="fas fa-copyright"></i>
+                2022
+        </span>
+        </div>
+    </footer>
+    <script src="./main.js"></script>
+
+
+
+    
+    
+</body>
+
+</html>

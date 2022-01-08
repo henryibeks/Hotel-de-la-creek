@@ -1,0 +1,423 @@
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+:root{
+    color: tomato;
+    color: blueviolet;
+    color: springgreen;
+    color: magenta;
+}
+
+
+html{
+    font-size: 100%;
+    
+}
+body{
+    font-family: Georgia, 'Times New Roman', Times, serif 
+    'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 1rem;
+    color: indigo;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+ul{
+    list-style: none;
+}
+section{
+    padding: 5rem 0;
+}
+.header{
+    width: 100%; height: 6rem;
+    display: flex; align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: blueviolet;
+    z-index: 999;
+}
+.container{
+    width: 0100%;
+    max-width: 120rem;
+    padding: 0 1.5rem;
+    margin: 0 auto;
+}
+.nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo img{
+    max-width: 60%;;
+}
+.hamburger-menu{
+    font-size: 2.6rem;
+    color: white;
+    cursor: pointer;
+    position: relative;
+    z-index: 1500;
+}
+.hamburger-menu .fa-times{
+    display: none;
+}
+
+.menuopen .hamburger-menu .fa-times{
+display: block;
+
+}
+.menuopen .hamburger-menu .fa-bars{
+display: none;
+
+}
+.navlist{
+    background:blueviolet;
+    
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 0100%;
+    height: 0100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 1400;
+    opacity: 0;
+    transform: scale(0);
+    transition: opacity .5s;
+}
+.menuopen .navlist{
+    opacity: 1;
+    transform: scale(1);
+}
+
+.navitem:not(:last-child){
+    margin-bottom: 0.4rem;
+}
+.navlink{
+    display: block;
+    color: white;
+    font-size: 3rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding: 1rem;
+}
+.hero{
+    width: 100%;
+    height: 100vh;
+    background: url(images/istockphoto-1318363878-170667a.jpg) center no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;text-align: center;
+    position: relative;
+    
+     z-index: 0;
+}
+
+.hero::before{
+    content:'';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: inherit;
+    height: inherit;
+    background-color: transparent;
+    z-index: -1;;
+}
+
+.mainheading{
+    color: orangered;
+    line-height: 1;
+    text-shadow:1px 1px 1rem rgba(0,0,0,.5);
+  
+    margin-bottom: 2.5rem;
+
+}
+.title{
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    
+}
+.subtitle{
+    font-size: 4rem;
+    font-weight: bold;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+.btn{
+    color: white;
+    font-size: 1.3rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: .5rem 3.5rem;
+    border: none;
+    border-radius: 10rem;
+    display: inline-flex;
+    align-items: center;
+}
+.btn-gradient{
+    background-color: blueviolet;
+}
+.btn-gradient:hover{
+    background-color: yellow;
+    cursor: progress;
+    color: red;
+}
+.dots{
+    font-size: 2.4rem;margin-left: .5rem;
+    opacity: .75; 
+}
+.booking{
+    background-image: url(./images/istockphoto-938092652-170667a.jpg)
+}
+.inputgroup{
+    margin-bottom: 1.5rem;
+}
+.inputlabel{
+    display: block;
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    color: white;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+.input,
+.options{
+    outline: none;
+    border: none;
+    width: 95%;
+    min-height: 3rem;
+    padding: 0rem;
+    font-weight: bold;
+    color: darkred;
+    letter-spacing: 2px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    resize: none;
+}
+.formbtn{
+    margin-top: 2.5rem;
+    cursor: pointer;
+
+}
+.btnblue{
+    background-color: brown
+}
+.btnblue:hover{
+    background-color: white;
+    color: darkred;
+}
+.roomtypes{
+    background: url(./images/istockphoto-938092652-170667a.jpg);
+    margin-top: 25px;
+}
+.sectionhead{
+    text-align: center;
+    margin-bottom: 5rem;
+
+}
+.heading{
+    display: block;
+    font-size: 4rem;
+    text-transform: uppercase;
+    color: white;
+    font-weight: bold;
+}
+.subhead{
+    font-size: 1.6rem;
+    font-family: Arial, Helvetica, sans-serif fantasy;
+    font-weight: 300;
+    color: white;
+
+}
+.grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr) );
+    grid-gap: 2.5rem;
+}
+.griditems{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.featuredrooms{
+    height: 35rem;
+    color: white;
+    padding: 1rem;
+    position: relative;
+    z-index: 0;
+
+}
+.featuredrooms::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color:pink transparent;
+    z-index: -1;
+
+}
+.grid2{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr) );
+    grid-gap: 2.5rem;
+}
+.griditemsf2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.c22{
+    background: url(./images/istockphoto-1318363878-170667a.jpg);
+    margin-top: 25px;
+    display: grid;
+}
+.room22image{
+    width: 500px;
+    height: 500px;
+    margin: 20px;
+}
+.c22 background url{
+    width: 100%;
+    height: 100%;
+}
+
+
+#contact{
+    display: flex;
+    flex-direction: column;
+    background-color: crimson;
+    color: white;
+    align-items: center;
+}
+#contact  h1{
+    margin: 50px;
+}
+.form33{
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center;
+}
+.input{
+    padding: 15px 20px;
+    margin: 15px;
+    width: 40%;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+
+}
+#Message{
+    margin: 15px;
+    padding: 10px;
+    border-radius: 30px;
+}
+#submit{
+    padding: 15px 20px;
+    margin: 30px;
+    width: 15%;
+    border-radius: 20px;
+    background-color: black;
+    color: white;
+    border: none;
+    outline: none;
+}
+#submit:hover{
+    background-color: white;
+    color:black;
+    cursor: pointer;
+}
+.creek{
+    padding: 5px 5px;
+    text-decoration: none;
+}
+.creek:hover{
+    border-bottom: 3px solid white;
+}
+
+.aboutcreek{
+  
+   
+    
+    color: red;
+    padding: 30px;
+    padding-bottom: 300px;
+}
+.abouth1{
+    text-align: center;
+    color: red;
+    font-size: 50px;
+}
+.abouth3{
+    font-size: 30px;
+    justify-content: center;
+    text-align: center;
+    font-display: italic;
+    color: orange;
+    text-justify: distribute-all-lines;
+    
+}
+.abouth5{
+    justify-content: center;
+    text-align: center;
+    font-display: italic;
+    font-size: 20px;
+}
+.footer{
+    background-color: black;
+    padding-bottom: 15px;
+    justify-content: center;
+    font-size: 15px;
+    color: white;
+    text-align: center;
+    
+}
+.footerspan{
+    font-size: 15px;
+    font-style: italic;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.animeh3{
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+    font-style: italic;
+    
+}
+.bigbox{
+    display: flex;
+    justify-content: space-between;
+    
+}
+.box2{
+    width: 100px;
+    margin-top: 10px;
+    height:100px;
+    top: 0;
+    right: 0;
+    position: relative;
+    animation: animate2 5s forwards  alternate ease-in-out;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+    
+   
+}
+@keyframes animate2{
+    25%{
+        top: 0; 
+        right: 100px;
+    }
+    50%{
+        top: 100px;
+    }
+}
